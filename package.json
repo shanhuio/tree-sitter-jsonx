@@ -1,0 +1,19 @@
+{
+  "name": "tree-sitter-jsonx",
+  "version": "0.0.1",
+  "description": "JSONx grammar for tree-sitter",
+  "license": "MIT",
+  "main": "bindings/node",
+  "keywords": [
+    "parser",
+    "lexer",
+    "jsonx"
+  ],
+  "scripts": {
+    "generate": "tree-sitter generate",
+    "test": "tree-sitter test"
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "^0.24.0"
+  }
+}

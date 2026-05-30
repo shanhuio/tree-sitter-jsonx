@@ -1,0 +1,7 @@
+node_modules/
+build/
+*.log
+package-lock.json
+
+# Generated binaries (the committed src/ is the canonical parser).
+*.wasm

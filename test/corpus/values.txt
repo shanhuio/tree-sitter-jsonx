@@ -1,0 +1,73 @@
+==================
+scalars
+==================
+
+42
+
+---
+
+(document
+  (number))
+
+==================
+object with comments and unquoted keys
+==================
+
+{
+    // a field
+    name: "svc",
+    port: 8080,
+    /* block */
+    enabled: true,
+    nothing: null,
+}
+
+---
+
+(document
+  (object
+    (comment)
+    (pair key: (identifier) value: (string (string_content)))
+    (pair key: (identifier) value: (number))
+    (comment)
+    (pair key: (identifier) value: (true))
+    (pair key: (identifier) value: (null))))
+
+==================
+arrays, raw strings, signs and dotted paths
+==================
+
+[
+    `raw`,
+    -0.5,
+    +42,
+    0xff,
+]
+a.b.c
+
+---
+
+(document
+  (array
+    (raw_string)
+    (number)
+    (number)
+    (number))
+  (dotted_name
+    (identifier)
+    (identifier)
+    (identifier)))
+
+==================
+quoted keys and escapes
+==================
+
+{ "a\n": 1 }
+
+---
+
+(document
+  (object
+    (pair
+      key: (string (string_content (escape_sequence)))
+      value: (number))))

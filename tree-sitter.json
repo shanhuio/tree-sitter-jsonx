@@ -1,0 +1,31 @@
+{
+  "grammars": [
+    {
+      "name": "jsonx",
+      "camelcase": "Jsonx",
+      "scope": "source.jsonx",
+      "path": ".",
+      "file-types": [
+        "jsonx",
+        "caco3"
+      ],
+      "injection-regex": "^jsonx$"
+    }
+  ],
+  "metadata": {
+    "version": "0.0.1",
+    "license": "MIT",
+    "description": "JSONx grammar for tree-sitter",
+    "links": {
+      "repository": "https://github.com/shanhuio/tree-sitter-jsonx"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true
+  }
+}
