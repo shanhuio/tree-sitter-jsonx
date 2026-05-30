@@ -9,7 +9,7 @@ adds:
 - unquoted, Go-style identifier object keys (`{value: 42}`)
 - backtick raw strings (may span lines)
 - a leading `+`/`-` sign on numbers, plus `0x` hex
-- dotted-identifier paths (`a.b.c`)
+- bare identifier values (`production`)
 
 It recognizes files with the `.jsonx` and `.caco3` extensions.
 

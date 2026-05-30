@@ -34,7 +34,7 @@ object with comments and unquoted keys
     (pair key: (identifier) value: (null))))
 
 ==================
-arrays, raw strings, signs and dotted paths
+arrays, raw strings, signs and bare identifiers
 ==================
 
 [
@@ -43,7 +43,7 @@ arrays, raw strings, signs and dotted paths
     +42,
     0xff,
 ]
-a.b.c
+production
 
 ---
 
@@ -53,10 +53,7 @@ a.b.c
     (number)
     (number)
     (number))
-  (dotted_name
-    (identifier)
-    (identifier)
-    (identifier)))
+  (identifier))
 
 ==================
 quoted keys and escapes

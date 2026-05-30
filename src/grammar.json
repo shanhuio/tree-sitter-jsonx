@@ -44,7 +44,7 @@
         },
         {
           "type": "SYMBOL",
-          "name": "dotted_name"
+          "name": "identifier"
         },
         {
           "type": "SYMBOL",
@@ -179,35 +179,6 @@
           "value": "]"
         }
       ]
-    },
-    "dotted_name": {
-      "type": "PREC_LEFT",
-      "value": 0,
-      "content": {
-        "type": "SEQ",
-        "members": [
-          {
-            "type": "SYMBOL",
-            "name": "identifier"
-          },
-          {
-            "type": "REPEAT",
-            "content": {
-              "type": "SEQ",
-              "members": [
-                {
-                  "type": "STRING",
-                  "value": "."
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "identifier"
-                }
-              ]
-            }
-          }
-        ]
-      }
     },
     "string": {
       "type": "CHOICE",

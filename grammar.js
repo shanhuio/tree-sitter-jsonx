@@ -4,7 +4,7 @@
  *
  * JSONx is a dialect of JSON (see shanhu.io/std/jsonx) that adds // and
  * /* * / comments, unquoted identifier object keys, Go-style raw strings,
- * leading number signs, and dotted-identifier paths. A file is a sequence of
+ * leading number signs, and bare identifier values. A file is a sequence of
  * values; a type-tagged "series" reads as a type name followed by a value.
  */
 
@@ -34,7 +34,7 @@ module.exports = grammar({
     _value: $ => choice(
       $.object,
       $.array,
-      $.dotted_name,
+      $.identifier,
       $.string,
       $.raw_string,
       $.number,
@@ -60,12 +60,6 @@ module.exports = grammar({
       repeat(seq($._value, optional(','))),
       ']',
     ),
-
-    // A bare identifier or a dotted path such as a.b.c.
-    dotted_name: $ => prec.left(seq(
-      $.identifier,
-      repeat(seq('.', $.identifier)),
-    )),
 
     string: $ => choice(
       seq('"', '"'),

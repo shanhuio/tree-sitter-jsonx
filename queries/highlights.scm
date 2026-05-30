@@ -4,8 +4,8 @@
 (pair
   key: (string) @property)
 
-; Bare identifiers / dotted paths used as values (e.g. a.b.c, or a series type tag).
-(dotted_name (identifier) @variable)
+; Bare identifiers used as values (e.g. a series type tag).
+(identifier) @variable
 
 ; Literals.
 (string) @string
@@ -24,7 +24,6 @@
   ","
   ":"
   ";"
-  "."
 ] @punctuation.delimiter
 
 [

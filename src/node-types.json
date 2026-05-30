@@ -12,11 +12,11 @@
           "named": true
         },
         {
-          "type": "dotted_name",
+          "type": "false",
           "named": true
         },
         {
-          "type": "false",
+          "type": "identifier",
           "named": true
         },
         {
@@ -60,11 +60,11 @@
           "named": true
         },
         {
-          "type": "dotted_name",
+          "type": "false",
           "named": true
         },
         {
-          "type": "false",
+          "type": "identifier",
           "named": true
         },
         {
@@ -89,21 +89,6 @@
         },
         {
           "type": "true",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "dotted_name",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "identifier",
           "named": true
         }
       ]
@@ -151,11 +136,11 @@
             "named": true
           },
           {
-            "type": "dotted_name",
+            "type": "false",
             "named": true
           },
           {
-            "type": "false",
+            "type": "identifier",
             "named": true
           },
           {
@@ -222,10 +207,6 @@
   },
   {
     "type": ",",
-    "named": false
-  },
-  {
-    "type": ".",
     "named": false
   },
   {
