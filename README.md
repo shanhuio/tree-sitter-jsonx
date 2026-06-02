@@ -11,7 +11,7 @@ adds:
 - a leading `+`/`-` sign on numbers, plus `0x` hex
 - bare identifier values (`production`)
 
-It recognizes files with the `.jsonx` and `.caco3` extensions.
+It recognizes files with the `.jsonx`, `.caco3`, and `.lets` extensions.
 
 ## Development
 
